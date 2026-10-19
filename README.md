@@ -8,7 +8,7 @@ Built with [Astro Starlight](https://starlight.astro.build), Russian only for no
 ```sh
 npm install
 npm run dev      # http://localhost:4321
-npm run check    # build + check that every permanent address still has a page
+npm run build    # build + check that every linked address still has a page (npm run check is the same)
 ```
 
 Articles are Markdown files in `src/content/docs/<section>/<article>.md`; the sidebar is in
@@ -21,11 +21,22 @@ Articles are Markdown files in `src/content/docs/<section>/<article>.md`; the si
 The program links to the articles (for example the update dialog opens
 `https://help.klinikon.online/whats-new`). Every address in `permanent-addresses.txt` is kept forever:
 never rename or move an article file. If a page really has to move, keep the old address as a
-redirect in `astro.config.mjs` (`redirects`). `npm run check` fails when an address has no page.
+redirect in `astro.config.mjs` (`redirects`). `program-links.txt` lists the addresses the program's «?» opens
+(Serkor.Web/src/lib/help.ts); it is rewritten by every release, never by hand. `npm run build` fails when an address
+of either file has no page.
 
 ## A new release
 
-Add a section on top of `src/content/docs/whats-new.md` with the version and date, then publish.
+Serkor's `.\build.ps1 release` ends with `.\build.ps1 help-pr`, which opens a pull request here (branch
+`release/vX.Y.Z`) with
+
+- `src/assets/screens/*.png` — the articles' screenshots, taken from that version on the demo clinic;
+- `program-links.txt` — the addresses that version's «?» opens;
+- `src/content/docs/whats-new.md` — the section «Следующая версия — готовится» renamed to `X.Y.Z — <date>`,
+  or a new section on top whose text you write before merging.
+
+Write the coming release's notes in advance under «Следующая версия — готовится». Nothing is published until the
+pull request is merged and `npm run deploy` runs on `main`.
 
 ## Publish
 

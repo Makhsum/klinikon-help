@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
-    "check": "astro build && node scripts/check-addresses.mjs",
+    "build": "astro build && node scripts/check-addresses.mjs",
+    "check": "npm run build",
     "preview": "astro preview",
     "deploy": "npm run check && gh-pages -d dist --dotfiles --nojekyll -m \"deploy: publish the help\"",
     "astro": "astro"

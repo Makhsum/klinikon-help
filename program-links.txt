@@ -1,0 +1,12 @@
+# The addresses the program's «?» opens (Serkor.Web/src/lib/help.ts), written by every release.
+# Do not edit by hand: npm run build fails when one of them has no page.
+/reception/schedule/
+/doctor/day/
+/reception/patients/
+/doctor/patient-card/
+/admin/services/
+/admin/analytics/
+/start/connect-computers/
+/admin/backups/
+/admin/staff/
+/admin/license/
