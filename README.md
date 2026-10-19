@@ -47,5 +47,5 @@ npm run deploy   # check, then push dist/ to the gh-pages branch
 ```
 
 The domain needs one DNS record at the registrar of klinikon.online:
-`help` — `CNAME` — `makhsum.github.io`. GitHub then issues the HTTPS certificate by itself;
+`help` — `CNAME` — `klinikon.github.io`. GitHub then issues the HTTPS certificate by itself;
 afterwards switch on "Enforce HTTPS" in Settings → Pages.
