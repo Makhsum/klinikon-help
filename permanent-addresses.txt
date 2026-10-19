@@ -1,0 +1,21 @@
+# Addresses the program and other sites link to. A line is never removed or changed:
+# a page that moves keeps a redirect here (see "redirects" in astro.config.mjs).
+# npm run check fails when one of them does not answer in the built site.
+/
+/start/install/
+/start/first-clinic/
+/start/connect-computers/
+/reception/patients/
+/reception/schedule/
+/reception/payments/
+/doctor/day/
+/doctor/patient-card/
+/doctor/dental-chart/
+/admin/license/
+/admin/staff/
+/admin/services/
+/admin/analytics/
+/admin/update/
+/admin/backups/
+/faq/
+/whats-new/

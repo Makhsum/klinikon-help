@@ -1,0 +1,49 @@
+---
+title: Как работать в Klinikon
+description: Как работать в Klinikon — программе для стоматологических клиник. Установка, регистратура, врач, администратор клиники.
+template: splash
+hero:
+  tagline: От установки до резервных копий — для регистратуры, врачей и администратора клиники.
+  image:
+    file: ../../assets/klinikon-mark.svg
+  actions:
+    - text: Начать работу
+      link: /start/install/
+      icon: right-arrow
+    - text: Что нового
+      link: /whats-new/
+      icon: document
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Разделы
+
+<CardGrid>
+	<Card title="Начало работы" icon="rocket">
+		[Установка программы](/start/install/) · [Первая клиника](/start/first-clinic/) ·
+		[Подключение компьютеров](/start/connect-computers/)
+	</Card>
+	<Card title="Регистратура" icon="open-book">
+		[Пациенты](/reception/patients/) · [Расписание и записи](/reception/schedule/) ·
+		[Оплата и долги](/reception/payments/)
+	</Card>
+	<Card title="Врач" icon="star">
+		[Мой день](/doctor/day/) · [Карточка пациента](/doctor/patient-card/) ·
+		[Зубная формула и лечение](/doctor/dental-chart/)
+	</Card>
+	<Card title="Администратор клиники" icon="setting">
+		[Лицензия](/admin/license/) · [Сотрудники](/admin/staff/) · [Услуги и цены](/admin/services/) ·
+		[Аналитика](/admin/analytics/) · [Обновление](/admin/update/) · [Резервные копии](/admin/backups/)
+	</Card>
+</CardGrid>
+
+## Частые вопросы
+
+<CardGrid>
+	<LinkCard title="Как пригласить врача в клинику?" href="/admin/staff/#пригласить-сотрудника" />
+	<LinkCard title="Как записать пациента на приём?" href="/reception/schedule/#записать-пациента" />
+	<LinkCard title="Что будет, когда закончится пробный месяц?" href="/admin/license/#когда-лицензия-закончилась" />
+	<LinkCard title="Все вопросы и ответы" href="/faq/" />
+</CardGrid>

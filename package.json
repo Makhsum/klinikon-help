@@ -1,0 +1,23 @@
+{
+  "name": "klinikon-help",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "check": "astro build && node scripts/check-addresses.mjs",
+    "preview": "astro preview",
+    "deploy": "npm run check && gh-pages -d dist --dotfiles --nojekyll -m \"deploy: publish the help\"",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.6",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "astro": "^7.2.10",
+    "gh-pages": "^6.3.0",
+    "sharp": "^0.35.3"
+  },
+  "private": true
+}

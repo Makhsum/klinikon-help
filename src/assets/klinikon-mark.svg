@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <!-- The brand mark of src/components/layout/Brand.tsx: a tooth on a teal tile,
+       in the primary and primary-foreground colours of the light and the dark theme
+       (src/index.css). The tooth is drawn larger and bolder than in the top bar so it still
+       reads at 16 px. The desktop icons in src-tauri/icons are rendered from the light one.
+       No double hyphen may appear in this comment: it makes the file invalid XML. -->
+  <style>
+    .tile { fill: #1b808d; }
+    .tooth { stroke: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #31b8c4; }
+      .tooth { stroke: #0f131a; }
+    }
+  </style>
+  <rect class="tile" width="36" height="36" rx="10" />
+  <path
+    class="tooth"
+    transform="translate(6 6)"
+    fill="none"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M7.5 3.5c-2.4 0-4 1.8-4 4.4 0 2.1.9 3.6 1.5 5.2.8 2.2 1 4.6 1.7 6.4.3.8 1.3 1.2 1.9.5.8-.9 1-3.5 1.8-4.6.6-.9 2.6-.9 3.2 0 .8 1.1 1 3.7 1.8 4.6.6.7 1.6.3 1.9-.5.7-1.8.9-4.2 1.7-6.4.6-1.6 1.5-3.1 1.5-5.2 0-2.6-1.6-4.4-4-4.4-1.6 0-2.7.9-4.5.9s-2.9-.9-4.5-.9z"
+  />
+</svg>
