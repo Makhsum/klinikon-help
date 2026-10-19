@@ -112,3 +112,8 @@ h4,
 :root:not([data-theme='light']) .sidebar-content a[aria-current='page'] {
 	color: hsl(215, 28%, 8%);
 }
+
+/* Starlight sizes the theme picker for English; «Светлая» and «Тёмная» need more room. */
+starlight-theme-select select {
+	width: calc(7.5em + var(--sl-inline-padding) * 2);
+}
